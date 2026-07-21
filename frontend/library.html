@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Steps | Resource Hub</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container container">
+        <nav class="nav-dropdown">
+          <button class="dropdown-trigger" onclick="toggleDropdown()">☰ Menu ▾</button>
+          <ul class="dropdown-menu" id="dropdownMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="library.html">Resource Hub</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-center">
+          <a href="index.html" class="logo-container">
+            <img src="images/Logo.png" alt="Safe Steps Logo" />
+          </a>
+          <div class="header-tagline">Building Safer Organizations · Stronger Families · Ethical Leaders</div>
+        </div>
+        <button class="cart-trigger" onclick="toggleCartDrawer(true)">
+          🛒 <span>Cart</span> (<span class="cart-count">0</span>)
+        </button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <span class="badge badge-gold">Library</span>
+        <h1>Free Policy Downloads & Insights</h1>
+        <p>Access evidence-based templates and guides for safeguarding and family support[cite: 1, 2].</p>
+      </section>
+
+      <section class="card-grid">
+        <div class="card">
+          <h3>Institutional Safety Checklist</h3>
+          <p style="margin: 1rem 0;">A 10-point checklist for schools and faith organizations.</p>
+          <a href="#" class="btn" onclick="alert('Downloading standard safety checklist template PDF...')">Download PDF</a>
+        </div>
+        <div class="card">
+          <h3>Parent's Guide to Online Safety</h3>
+          <p style="margin: 1rem 0;">Practical steps to manage digital access for teenagers.</p>
+          <a href="#" class="btn" onclick="alert('Downloading Digital Safety Guide...')">Download Guide</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copyright">&copy; 2026 Safe Steps Training Services. All rights reserved.</div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

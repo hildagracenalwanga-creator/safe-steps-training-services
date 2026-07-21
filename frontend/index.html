@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Steps Training Services | Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container container">
+        <nav class="nav-dropdown">
+          <button class="dropdown-trigger" onclick="toggleDropdown()">☰ Menu ▾</button>
+          <ul class="dropdown-menu" id="dropdownMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="library.html">Resource Hub</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-center">
+          <a href="index.html" class="logo-container">
+            <img src="images/Logo.png" alt="Safe Steps Logo" />
+          </a>
+          <div class="header-tagline">Building Safer Organizations · Stronger Families · Ethical Leaders</div>
+        </div>
+        <button class="cart-trigger" onclick="toggleCartDrawer(true)">
+          🛒 <span>Cart</span> (<span class="cart-count">0</span>)
+        </button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <span class="badge badge-gold" style="margin-bottom: 1rem">Welcome</span>
+        <h1>Strengthening Institutions & Protecting Children</h1>
+        <p style="max-width: 700px; margin: 0 auto 2rem;">
+          Safe Steps Training Services provides expert child safeguarding, parenting support, and leadership development across Uganda[cite: 1, 2].
+        </p>
+        <a href="programs.html" class="btn">Explore Our Services</a>
+      </section>
+
+      <section class="card-grid">
+        <div class="card">
+          <span class="badge">Safeguarding</span>
+          <h3 style="margin-top:10px; color:var(--primary-blue);">Child Protection Solutions</h3>
+          <p>Institutional policy development, risk audits, and staff training for schools, churches, and NGOs[cite: 1, 2].</p>
+        </div>
+        <div class="card">
+          <span class="badge badge-gold">Parenting</span>
+          <h3 style="margin-top:10px; color:var(--primary-blue);">Parenting Excellence</h3>
+          <p>Practical workshops and guidance helping parents raise resilient, ethical children[cite: 1, 2].</p>
+        </div>
+        <div class="card">
+          <span class="badge">Leadership</span>
+          <h3 style="margin-top:10px; color:var(--primary-blue);">Ethical Mentorship</h3>
+          <p>Executive leadership training fostering integrity and sustainable community impact[cite: 1, 2].</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="cart-backdrop" id="cartBackdrop" onclick="toggleCartDrawer(false)"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button style="background:none; border:none; color:white; font-size:1.4rem; cursor:pointer;" onclick="toggleCartDrawer(false)">✕</button>
+      </div>
+      <div class="cart-body" id="cartDrawerItems"><p>Your cart is empty.</p></div>
+      <div class="cart-footer">
+        <div style="display:flex; justify-style:space-between; margin-bottom:1rem; font-weight:bold;">
+          <span>Total:</span><span id="cartDrawerTotal">UGX 0</span>
+        </div>
+        <a href="shop.html" class="btn" style="width:100%; text-align:center;">Go to Store</a>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h3>Safe Steps Training Services</h3>
+          <p>Consultancy dedicated to safeguarding, parenting, and leadership excellence[cite: 1, 2].</p>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <p>MTN MoMo: 0784052908<br>Airtel Money: 0759464634<br>Email: hildgracenalwanga@gmail.com[cite: 1, 2]</p>
+        </div>
+      </div>
+      <div class="copyright">&copy; 2026 Safe Steps Training Services. All rights reserved.</div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
